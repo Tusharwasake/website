@@ -1,10 +1,13 @@
+let currentPage =1;
+const MoviePerPage =5;
+let movieData =[];
+const movieGrid = document.getElementById("movieGrid");
+const pageIndicator = document.getElementById("pageIndicator")
+const sortSelect = document.getElementById("sort")
+const previousPageButton = document.getElementById("prevPage")
+const nextPageButton = document.getElementById("nextPage")
 
 
-// const requestOptions = {
-//     method: "GET",
-//     redirect: "follow"
-//   };
-  
 
 document.addEventListener("DOMContent",function(){
     fetchMovies();
